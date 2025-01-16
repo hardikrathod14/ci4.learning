@@ -3,6 +3,7 @@
 namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
+use APP\Controllers\Shop as ClientShop;
 
 class Shop extends BaseController
 {
@@ -12,8 +13,9 @@ class Shop extends BaseController
         return view('admin/shop', $data);
     }
 
-    public function hello()
+    public function product($name, $brand = '')
     {
-        echo "Hello from admin controller product method";
+        echo "Name: $name <br>";
+        echo "Brand: $brand";
     }
 }

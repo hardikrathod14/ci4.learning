@@ -15,6 +15,11 @@ class Shop extends BaseController
     public function product()
     {
         $helloObj = new AdminShop();
-        $helloObj->hello();
+        // $helloObj->hello();
+    }
+
+    public function anotherHello()
+    {
+        echo "Another hello from shop client controller";
     }
 }
